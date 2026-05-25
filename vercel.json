@@ -1,0 +1,6 @@
+
+{  
+  "output directory": "dist",
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev"
+}
