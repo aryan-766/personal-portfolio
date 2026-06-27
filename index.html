@@ -1,603 +1,854 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aryan jain — AI Engineer & Founder</title>
-<meta name="description" content="AI Engineer & Founder specializing in intelligent systems, AI agents, and premium digital experiences.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link href="portfolio.css" rel="stylesheet" type="text/css">
 
-  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aryan jain — AI Engineer & Founder</title>
+  <meta name="description"
+    content="AI Engineer & Founder specializing in intelligent systems, AI agents, and premium digital experiences.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link href="portfolio.css" rel="stylesheet" type="text/css">
+
+
 
 </head>
-<body>
- 
-<div id="scroll-progress"></div>
-<div id="cursor"></div>
- 
-<!-- NAV -->
-<nav>
-  <a href="#" class="nav-logo">AJ</a>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <div class="nav-actions">
-    <button class="theme-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">☀️</button>
-    <a href="#contact" class="btn-primary">Hire Me ↗</a>
-  </div>
-</nav>
- 
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-bg">
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="orb orb-3"></div>
-    <div class="grid-overlay"></div>
-    <canvas id="particleCanvas" style="position:absolute;inset:0;pointer-events:none;z-index:1"></canvas>
-  </div>
- 
-  <div class="hero-content">
-    <div class="hero-badge">
-      <span class="badge-dot"></span>
-      Available for new opportunities
-    </div>
-    <h1 class="hero-h1">
-      AI Engineer & Founder<br>
-      <span class="grad">Building Intelligent</span><br>
-      Systems & Startups
-    </h1>
-    <p class="hero-sub">I build AI agents, design robust machine learning systems, and create premium digital experiences that push the boundary of what's possible.</p>
-    <div class="hero-ctas">
-      <a href="#projects" class="btn-primary">View Projects →</a>
-      <a href="#" class="btn-ghost" id="resumeBtn">⬇ Download Resume</a>
-      <a href="#contact" class="btn-ghost">Contact Me</a>
-    </div>
-    <div class="hero-stats">
-      <div class="stat"><div class="stat-num" data-count="15">0</div><div class="stat-label">Projects Built</div></div>
-      <div class="stat"><div class="stat-num" data-count="95">0</div><div class="stat-label">Models Trained</div></div>
-      <div class="stat"><div class="stat-num" data-count="1000">0</div><div class="stat-label">GitHub Commits</div></div>
-    </div>
-  </div>
- 
-  <div class="hero-terminal glass">
-    <div class="terminal-header">
-      <span class="dot dot-r"></span>
-      <span class="dot dot-y"></span>
-      <span class="dot dot-g"></span>
-      <span class="terminal-title">aryan@ai-lab ~ zsh</span>
-    </div>
-    <div class="terminal-body" id="terminalBody">
-      <div class="t-line"><span class="t-prompt">❯</span><span class="t-cmd"> python train.py --model llm</span></div>
-    </div>
-  </div>
-</section>
- 
-<div class="divider"></div>
- 
-<!-- ABOUT -->
-<section id="about">
-  <div class="section-wrap">
-    <div class="reveal">
-      <div class="section-label">About Me</div>
-      <h2 class="section-title">From Curiosity<br>to <span style="background:linear-gradient(135deg,var(--accent),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Mastery</span></h2>
-      <p class="section-sub">A journey through mathematics, machine learning, and building systems that think.</p>
-    </div>
- 
-    <div class="about-grid">
-      <div class="about-photo reveal reveal-delay-1">
-        <div style="position:relative;display:inline-block;width:100%">
-          <div class="photo-glow"></div>
-          <div class="photo-frame">
-            <div class="photo-placeholder"> 
-              <img src="images/image.jpg" alt="Aryan Jain">
-             </div>
-          </div>
-        </div>
-        <div class="about-floating-badge fb-1 glass reveal reveal-delay-2">
-          <span class="badge-icon"></span>
-          <div>
-            <div style="font-size:11px;color:black;margin-bottom:2px">Specialization</div>
-            <div>LLMs & RAG Systems</div>
-          </div>
-        </div>
-        <div class="about-floating-badge fb-2 glass reveal reveal-delay-3">
-          <span class="badge-icon"></span>
-          <div>
-            <div style="font-size:11px;color:black;margin-bottom:2px">Experience</div>
-            <div>2+ Years AI/ML</div>
-          </div>
-        </div>
-      </div>
- 
-      <div class="about-content reveal reveal-delay-2">
-        <p class="about-intro">
-          I'm <strong>Aryan Jain</strong>, an AI Engineer with an <strong>entrepreneurial mindset</strong>, driven to build products that solve real-world problems. With complete knowledge of <strong>ML, DL, Gen AI, RAG, LangChain, LangGraph, AI agents, tools, and automations</strong>, I focus on turning complex intelligence into scalable, impactful solutions.
-        </p>
-        <p class="about-intro" style="margin-bottom:40px">
-          Currently, I am building <strong>Synox AI</strong> and <strong>Raftra</strong>, while working as an <strong>AI Trainee at Ambrane</strong>. I care deeply about crafting premium digital experiences and pushing the boundaries of AI integration.
-        </p>
- 
-        <div class="timeline">
-          
-          <div class="tl-item">
-            <div class="tl-dot"></div>
-            <div class="tl-date">2024-2028</div>
-            <div class="tl-title">B.Tech Computer Science & AI</div>
-            <div class="tl-org">Akhilesh Das Gupta Institute of Technology and Management</div>
-            <div class="tl-desc">CGPA: 8.0/10. Active in research, including a partially accepted paper at IEEE on mitigating jailbreaking and prompt injection.</div>
-          </div>
-          <div class="tl-item">
-            <div class="tl-dot"></div>
-            <div class="tl-date">2023-2024</div>
-            <div class="tl-title">Class 12th</div>
-            <div class="tl-org">High School Education</div>
-            <div class="tl-desc">Scored 84% with a strong foundation in science and mathematics.</div>
-          </div>
-          <div class="tl-item">
-            <div class="tl-dot"></div>
-            <div class="tl-date">2021-2022</div>
-            <div class="tl-title">Class 10th</div>
-            <div class="tl-org">Secondary Education</div>
-            <div class="tl-desc">Scored 92% demonstrating consistent academic excellence.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
- 
-<div class="divider"></div>
- 
-<!-- SKILLS -->
-<section id="skills">
-  <div class="section-wrap">
-    <div class="reveal">
-      <div class="section-label">Technical Skills</div>
-      <h2 class="section-title">Full-Stack <span style="background:linear-gradient(135deg,var(--accent),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Intelligence</span></h2>
-      <p class="section-sub">From neural architecture research to pixel-perfect UI — I operate across the entire intelligence stack.</p>
-    </div>
- 
-    <div class="skills-tabs reveal">
-      <button class="tab-btn active" data-tab="aiml">AI / ML</button>
-      <button class="tab-btn" data-tab="programming">Programming</button>
-      <button class="tab-btn" data-tab="backend">Backend & APIs</button>
-      <button class="tab-btn" data-tab="cloud">Data & Cloud</button>
-      <button class="tab-btn" data-tab="frontend">Frontend</button>
-    </div>
- 
-    <div class="skill-panel active" id="panel-aiml" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px">
-      <div class="skill-card" style="--w:95%"><span class="skill-icon">🧠</span><div class="skill-name">Machine Learning</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-      <div class="skill-card" style="--w:90%"><span class="skill-icon">🔬</span><div class="skill-name">Deep Learning</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-      <div class="skill-card" style="--w:95%"><span class="skill-icon">✨</span><div class="skill-name">Gen AI & Claude</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-      <div class="skill-card" style="--w:92%"><span class="skill-icon">🤖</span><div class="skill-name">CrewAI & Agents</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-      <div class="skill-card" style="--w:88%"><span class="skill-icon">👁️</span><div class="skill-name">RAG Systems</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-      <div class="skill-card" style="--w:85%"><span class="skill-icon">⛓️</span><div class="skill-name">LangChain & LangGraph</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-      <div class="skill-card" style="--w:90%"><span class="skill-icon">⚙️</span><div class="skill-name">Zapier, n8n, Automations</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-    </div>
- 
-    <div class="skill-panel" id="panel-programming" style="display:none;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px">
-      <div class="skill-card" style="--w:97%"><span class="skill-icon">🐍</span><div class="skill-name">Python</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-      <div class="skill-card" style="--w:80%"><span class="skill-icon">☕</span><div class="skill-name">C</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-      <div class="skill-card" style="--w:72%"><span class="skill-icon">⚙️</span><div class="skill-name">C++</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-      <div class="skill-card" style="--w:85%"><span class="skill-icon">🗄️</span><div class="skill-name">SQL</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-      <div class="skill-card" style="--w:88%"><span class="skill-icon">🌐</span><div class="skill-name">JavaScript</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-      <div class="skill-card" style="--w:86%"><span class="skill-icon">📘</span><div class="skill-name">OOPS</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-      <div class="skill-card" style="--w:86%"><span class="skill-icon">📘</span><div class="skill-name">TypeScript</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-    </div>
- 
-    <div class="skill-panel" id="panel-backend" style="display:none;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px">
-      <div class="skill-card" style="--w:95%"><span class="skill-icon">🚀</span><div class="skill-name">FastAPI</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-      <div class="skill-card" style="--w:90%"><span class="skill-icon">🔌</span><div class="skill-name">REST APIs</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-      <div class="skill-card" style="--w:85%"><span class="skill-icon">🫙</span><div class="skill-name">Django & Flask</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-      <div class="skill-card" style="--w:88%"><span class="skill-icon">🔗</span><div class="skill-name">API Integrations</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-      <div class="skill-card" style="--w:90%"><span class="skill-icon">⚡</span><div class="skill-name">Data Fetching</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-      <div class="skill-card" style="--w:82%"><span class="skill-icon">🌐</span><div class="skill-name">Node.js</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-    </div>
- 
-    <div class="skill-panel" id="panel-cloud" style="display:none;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px">
-      <div class="skill-card" style="--w:85%"><span class="skill-icon">🐳</span><div class="skill-name">Docker</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-      <div class="skill-card" style="--w:78%"><span class="skill-icon">☸️</span><div class="skill-name">Kubernetes</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-      <div class="skill-card" style="--w:83%"><span class="skill-icon">☁️</span><div class="skill-name">AWS</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-      <div class="skill-card" style="--w:88%"><span class="skill-icon">🔍</span><div class="skill-name">Vector DBs</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-      <div class="skill-card" style="--w:80%"><span class="skill-icon">🐘</span><div class="skill-name">PostgreSQL</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-      <div class="skill-card" style="--w:75%"><span class="skill-icon">🍃</span><div class="skill-name">MongoDB</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-    </div>
- 
-    <div class="skill-panel" id="panel-frontend" style="display:none;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px">
-      <div class="skill-card" style="--w:89%"><span class="skill-icon">⚛️</span><div class="skill-name">React</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-      <div class="skill-card" style="--w:85%"><span class="skill-icon">🎨</span><div class="skill-name">Tailwind CSS</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-      <div class="skill-card" style="--w:82%"><span class="skill-icon">🎭</span><div class="skill-name">Framer Motion</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-      <div class="skill-card" style="--w:78%"><span class="skill-icon">✨</span><div class="skill-name">GSAP</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-      <div class="skill-card" style="--w:75%"><span class="skill-icon">🌐</span><div class="skill-name">Three.js</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-      <div class="skill-card" style="--w:87%"><span class="skill-icon">🖌️</span><div class="skill-name">UI/UX Design</div><div class="skill-level"><div class="skill-level-fill"></div></div></div>
-    </div>
-  </div>
-</section>
- 
-<div class="divider"></div>
- 
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="section-wrap">
-    <div class="reveal">
-      <div class="section-label">Featured Projects</div>
-      <h2 class="section-title">Systems That <span style="background:linear-gradient(135deg,var(--cyan),var(--green));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Think</span></h2>
-      <p class="section-sub">Production-grade AI systems built with research-level rigor and engineering excellence.</p>
-    </div>
- 
-    <div class="projects-grid">
-      <div class="project-card reveal">
-        <div class="project-preview">
-          <div class="project-preview-bg" style="background:linear-gradient(135deg,#1a0533,#0d1b3e,#002233)"></div>
-          <div class="project-emoji">🚀</div>
-          <div class="project-tags-preview">
-            <span class="tag">AI Agents</span>
-            <span class="tag">Gen AI</span>
-            <span class="tag">LLMs</span>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-title">Synox AI</div>
-          <div class="project-desc">Building an AI agents workplace site designed to empower employees with powerful AI tools and seamless reference integration.</div>
-          <div class="project-metrics">
-            <span class="metric">Workplace AI</span>
-            <span class="metric">Agentic Workflows</span>
-          </div>
-          <div class="project-links">
-            <a href="https://synoxai.vercel.app" target="_blank" class="link-btn primary-link">Live Demo ↗</a>
-            <a href="https://github.com/aryan-766" class="link-btn">GitHub</a>
-          </div>
-        </div>
-      </div>
- 
-      <div class="project-card reveal reveal-delay-1">
-        <div class="project-preview">
-          <div class="project-preview-bg" style="background:linear-gradient(135deg,#0a2a1a,#1a3a0a,#2a1a00)"></div>
-          <div class="project-emoji">📈</div>
-          <div class="project-tags-preview">
-            <span class="tag">Automations</span>
-            <span class="tag">Marketing</span>
-            <span class="tag">TypeScript</span>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-title">Raftra</div>
-          <div class="project-desc">A comprehensive marketing suite for agencies and SMEs. Features built-in automations, streamlined workflows, and one-click ad launches across multiple platforms.</div>
-          <div class="project-metrics">
-            <span class="metric">Marketing Suite</span>
-            <span class="metric">1-Click Ads</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/aryan-766/raftra" class="link-btn">GitHub</a>
-          </div>
-        </div>
-      </div>
- 
-      <div class="project-card reveal reveal-delay-2">
-        <div class="project-preview">
-          <div class="project-preview-bg" style="background:linear-gradient(135deg,#1a0020,#2a0a1a,#1a0a2a)"></div>
-          <div class="project-emoji">🛡️</div>
-          <div class="project-tags-preview">
-            <span class="tag">Machine Learning</span>
-            <span class="tag">Python</span>
-            <span class="tag">Classification</span>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-title">Fraud Invoice Detector</div>
-          <div class="project-desc">Machine learning solution designed to detect fraudulent activities within invoice processing pipelines, ensuring financial security.</div>
-          <div class="project-metrics">
-            <span class="metric">Fraud Detection</span>
-            <span class="metric">Python</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/aryan-766/fraud_invoice_detector" class="link-btn">GitHub</a>
-          </div>
-        </div>
-      </div>
- 
-      <div class="project-card reveal">
-        <div class="project-preview">
-          <div class="project-preview-bg" style="background:linear-gradient(135deg,#001a2a,#0a1a3a,#001533)"></div>
-          <div class="project-emoji">🏥</div>
-          <div class="project-tags-preview">
-            <span class="tag">Deep Learning</span>
-            <span class="tag">Python</span>
-            <span class="tag">Healthcare</span>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-title">Patient Churn Classifier</div>
-          <div class="project-desc">Advanced predictive model for healthcare to identify patient churn risks and classify disease indicators from medical data.</div>
-          <div class="project-metrics">
-            <span class="metric">Health Tech</span>
-            <span class="metric">Predictive AI</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/aryan-766/patient-churn-disease-classifier" class="link-btn">GitHub</a>
-          </div>
-        </div>
-      </div>
- 
-      <div class="project-card reveal reveal-delay-1">
-        <div class="project-preview">
-          <div class="project-preview-bg" style="background:linear-gradient(135deg,#0a1a00,#1a2a00,#0a0a1a)"></div>
-          <div class="project-emoji">💹</div>
-          <div class="project-tags-preview">
-            <span class="tag">Time Series</span>
-            <span class="tag">Finance</span>
-            <span class="tag">Python</span>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-title">Stock Return Forecaster</div>
-          <div class="project-desc">Quantitative finance tool that utilizes historical data and machine learning to forecast future stock returns and market trends.</div>
-          <div class="project-metrics">
-            <span class="metric">FinTech</span>
-            <span class="metric">Forecasting</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/aryan-766/stock_return_forecaster" class="link-btn">GitHub</a>
-          </div>
-        </div>
-      </div>
- 
-      <div class="project-card reveal reveal-delay-2">
-        <div class="project-preview">
-          <div class="project-preview-bg" style="background:linear-gradient(135deg,#1a0a00,#2a1000,#1a0a1a)"></div>
-          <div class="project-emoji">🏠</div>
-          <div class="project-tags-preview">
-            <span class="tag">Regression</span>
-            <span class="tag">Python</span>
-            <span class="tag">Real Estate</span>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-title">House Price Prediction</div>
-          <div class="project-desc">Regression-based machine learning model analyzing various property attributes to accurately predict housing prices.</div>
-          <div class="project-metrics">
-            <span class="metric">Real Estate</span>
-            <span class="metric">Data Science</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/aryan-766/house_price_prediction" class="link-btn">GitHub</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
- 
-<div class="divider"></div>
- 
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="section-wrap">
-    <div class="reveal">
-      <div class="section-label">Experience</div>
-      <h2 class="section-title">Professional <span style="background:linear-gradient(135deg,var(--amber),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Journey</span></h2>
-      <p class="section-sub">Building at the frontier of AI across research labs, startups, and enterprise environments.</p>
-    </div>
- 
-    <div class="exp-timeline">
-      <div class="exp-item reveal">
-        <div class="exp-dot"></div>
-        <div class="exp-card">
-          <div class="exp-period">JUNE 2026 - CURRENT</div>
-          <div class="exp-role">AI Trainee</div>
-          <div class="exp-company">AMBRANE</div>
-          <ul class="exp-bullets">
-            <li>Working on cutting-edge AI integrations and automation pipelines using LangChain and Gen AI tools.</li>
-            <li>Gaining hands-on expertise in developing production-grade AI systems, ML, and DL models.</li>
-          </ul>
-        </div>
-      </div>
- 
-      <div class="exp-item reveal reveal-delay-1">
-        <div class="exp-dot"></div>
-        <div class="exp-card">
-          <div class="exp-period">FEB 2026 — CURRENT</div>
-          <div class="exp-role">Founder</div>
-          <div class="exp-company">SYNOX AI</div>
-          <ul class="exp-bullets">
-            <li>Building an AI agents workplace site providing employees with powerful AI tools and reference generation integrations.</li>
-            <li>Implementing multi-agent architectures and LangGraph for complex task orchestration.</li>
-          </ul>
-        </div>
-      </div>
 
-      <div class="exp-item reveal reveal-delay-1">
-        <div class="exp-dot"></div>
-        <div class="exp-card">
-          <div class="exp-period">JAN 2026 — CURRENT</div>
-          <div class="exp-role">Founder</div>
-          <div class="exp-company">RAFTRA</div>
-          <ul class="exp-bullets">
-            <li>Developing a comprehensive marketing suite to assist marketing agencies and SMEs.</li>
-            <li>Engineering built-in automations to reduce workflows and enabling 1-click ad launches across multiple platforms.</li>
-          </ul>
-        </div>
+<body>
+
+  <div id="scroll-progress"></div>
+  <div id="cursor"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">AJ</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">☀️</button>
+      <a href="#contact" class="btn-primary">Hire Me ↗</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+      <canvas id="particleCanvas" style="position:absolute;inset:0;pointer-events:none;z-index:1"></canvas>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for new opportunities
       </div>
- 
-      <div class="exp-item reveal reveal-delay-2">
-        <div class="exp-dot"></div>
-        <div class="exp-card">
-          <div class="exp-period">Research & Academia</div>
-          <div class="exp-role">Co-Author</div>
-          <div class="exp-company">IEEE Publication</div>
-          <ul class="exp-bullets">
-            <li>📝 Partially accepted research paper at IEEE.</li>
-            <li>Collaborated with 5 other co-authors on "Mitigating Jailbreaking and Prompt Injection" in Large Language Models.</li>
-            <li>Contributing actively to securing AI agents and LLM-powered applications.</li>
-          </ul>
+      <h1 class="hero-h1">
+        AI Engineer & Founder<br>
+        <span class="grad">Building Intelligent</span><br>
+        Systems & Startups
+      </h1>
+      <p class="hero-sub">I build AI agents, design robust machine learning systems, and create premium digital
+        experiences that push the boundary of what's possible.</p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn-primary">View Projects →</a>
+        <a href="resume.pdf" download="Aryan_Jain_Resume.pdf" class="btn-ghost" id="resumeBtn">⬇ Download Resume</a>
+        <a href="#contact" class="btn-ghost">Contact Me</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num" data-count="15">0</div>
+          <div class="stat-label">Projects Built</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="95">0</div>
+          <div class="stat-label">Models Trained</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="1000">0</div>
+          <div class="stat-label">GitHub Commits</div>
         </div>
       </div>
     </div>
-  </div>
-</section>
- 
-<div class="divider"></div>
- 
-<!-- CODE SHOWCASE -->
-<section id="code">
-  <div class="section-wrap">
-    <div class="reveal">
-      <div class="section-label">Engineer Mindset</div>
-      <h2 class="section-title">Clean Code,<br><span style="background:linear-gradient(135deg,var(--accent),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Clear Thinking</span></h2>
-      <p class="section-sub">Production-grade ML code that's as readable as it is powerful.</p>
-    </div>
- 
-    <div class="code-editor reveal">
-      <div class="code-editor-header">
+
+    <div class="hero-terminal glass">
+      <div class="terminal-header">
         <span class="dot dot-r"></span>
         <span class="dot dot-y"></span>
         <span class="dot dot-g"></span>
-        <div class="code-tabs">
-          <span class="code-tab active">rag_pipeline.py</span>
-          <span class="code-tab">fine_tune.py</span>
-          <span class="code-tab">inference.py</span>
-        </div>
+        <span class="terminal-title">aryan@ai-lab ~ zsh</span>
       </div>
-      <div class="code-body">
-        <div class="code-line"><span class="line-num">1</span><span class="code-content"><span class="cm"># Enterprise RAG Pipeline with hybrid search + reranking</span></span></div>
-        <div class="code-line"><span class="line-num">2</span><span class="code-content"><span class="kw">from</span> <span class="fn">langchain</span> <span class="kw">import</span> <span class="cls">RAGChain</span>, <span class="cls">HybridRetriever</span></span></div>
-        <div class="code-line"><span class="line-num">3</span><span class="code-content"><span class="kw">from</span> <span class="fn">transformers</span> <span class="kw">import</span> <span class="cls">AutoModelForCausalLM</span>, <span class="cls">AutoTokenizer</span></span></div>
-        <div class="code-line"><span class="line-num">4</span><span class="code-content"><span class="kw">import</span> <span class="fn">pinecone</span></span></div>
-        <div class="code-line"><span class="line-num">5</span><span class="code-content"></span></div>
-        <div class="code-line"><span class="line-num">6</span><span class="code-content"><span class="kw">class</span> <span class="cls">EnterpriseRAG</span>:</span></div>
-        <div class="code-line"><span class="line-num">7</span><span class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">def</span> <span class="fn">__init__</span>(<span class="op">self</span>, model_id: <span class="cls">str</span>, index_name: <span class="cls">str</span>):</span></div>
-        <div class="code-line"><span class="line-num">8</span><span class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">self</span>.model = <span class="cls">AutoModelForCausalLM</span>.from_pretrained(</span></div>
-        <div class="code-line"><span class="line-num">9</span><span class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;model_id, load_in_4bit=<span class="kw">True</span>, device_map=<span class="str">"auto"</span></span></div>
-        <div class="code-line"><span class="line-num">10</span><span class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</span></div>
-        <div class="code-line"><span class="line-num">11</span><span class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">self</span>.retriever = <span class="cls">HybridRetriever</span>(</span></div>
-        <div class="code-line"><span class="line-num">12</span><span class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dense_index=pinecone.Index(index_name),</span></div>
-        <div class="code-line"><span class="line-num">13</span><span class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alpha=<span class="num">0.7</span>, <span class="cm"># weight for dense retrieval</span></span></div>
-        <div class="code-line"><span class="line-num">14</span><span class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</span></div>
-        <div class="code-line"><span class="line-num">15</span><span class="code-content"></span></div>
-        <div class="code-line"><span class="line-num">16</span><span class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">async def</span> <span class="fn">query</span>(<span class="op">self</span>, question: <span class="cls">str</span>, k: <span class="cls">int</span> = <span class="num">5</span>) -> <span class="cls">dict</span>:</span></div>
-        <div class="code-line"><span class="line-num">17</span><span class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;docs = <span class="kw">await</span> <span class="op">self</span>.retriever.aretrieve(question, k=k)</span></div>
-        <div class="code-line"><span class="line-num">18</span><span class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reranked = <span class="op">self</span>.rerank(docs, question)</span></div>
-        <div class="code-line"><span class="line-num">19</span><span class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;context = <span class="op">self</span>.format_context(reranked[:<span class="num">3</span>])</span></div>
-        <div class="code-line"><span class="line-num">20</span><span class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">return await</span> <span class="op">self</span>.generate(question, context)</span></div>
+      <div class="terminal-body" id="terminalBody">
+        <div class="t-line"><span class="t-prompt">❯</span><span class="t-cmd"> python train.py --model llm</span></div>
       </div>
     </div>
-  </div>
-</section>
- 
-<div class="divider"></div>
- 
-<!-- GITHUB STATS -->
-<section id="github">
-  <div class="section-wrap">
-    <div class="reveal">
-      <div class="section-label">GitHub Activity</div>
-      <h2 class="section-title">Always <span style="background:linear-gradient(135deg,var(--green),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Shipping</span></h2>
-      <p class="section-sub">Consistent contributions across open source projects, research, and production systems.</p>
-    </div>
- 
-    <div class="stats-grid">
-      <div class="stat-card reveal">
-        <div class="stat-card-num" data-count="1000">0</div>
-        <div class="stat-card-label">GitHub Commits</div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-wrap">
+      <div class="reveal">
+        <div class="section-label">About Me</div>
+        <h2 class="section-title">From Curiosity<br>to <span
+            style="background:linear-gradient(135deg,var(--accent),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Mastery</span>
+        </h2>
+        <p class="section-sub">A journey through mathematics, machine learning, and building systems that think.</p>
       </div>
-      <div class="stat-card reveal reveal-delay-1">
-        <div class="stat-card-num" data-count="12">0</div>
-        <div class="stat-card-label">Repositories</div>
-      </div>
-      
-    </div>
- 
-    <div class="reveal" style="margin-top:32px">
-      <div style="font-size:12px;color:rgb(229, 65, 65);font-family:var(--font-mono);margin-bottom:12px">Contribution activity — past 12 months</div>
-      <div class="heatmap" id="heatmap"></div>
-    </div>
-  </div>
-</section>
- 
-<div class="divider"></div>
- 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="section-wrap">
-    <div class="reveal">
-      <div class="section-label">Get In Touch</div>
-      <h2 class="section-title">Let's Build<br><span style="background:linear-gradient(135deg,var(--accent),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Something Remarkable</span></h2>
-    </div>
- 
-    <div class="contact-grid">
-      <form action="https://formsubmit.co/aryan070606@gmail.com" method="POST" class="contact-form-wrap glass reveal">
-        <input type="hidden" name="_subject" value="New message from your portfolio!">
-        <div class="form-group">
-          <label class="form-label">Your Name</label>
-          <input type="text" name="name" class="form-input" placeholder="Enter your name" required>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Email Address</label>
-          <input type="email" name="email" class="form-input" placeholder="Enter your email" required>
-        </div>
-        <div class="form-group">
-          <label class="form-label">What are you building?</label>
-          <textarea name="message" class="form-textarea" placeholder="Tell me about your project, idea, or opportunity..." required></textarea>
-        </div>
-        <button type="submit" class="btn-primary" style="width:100%;justify-content:center;padding:14px">Send Message →</button>
-      </form>
- 
-      <div class="contact-info reveal reveal-delay-1">
-        <p class="contact-intro">Whether you're building the next generation of AI products, need an expert to join your team, or want to collaborate on research — I'm always open to interesting conversations.</p>
-        <div class="contact-links">
-          <a href="mailto:aryan070606@gmail.com" class="contact-link">
-            <span class="cl-icon">📧</span>
-            <div class="cl-info">
-              <div class="cl-platform">Email</div>
-              <div class="cl-handle">aryan070606@gmail.com</div>
+
+      <div class="about-grid">
+        <div class="about-photo reveal reveal-delay-1">
+          <div style="position:relative;display:inline-block;width:100%">
+            <div class="photo-glow"></div>
+            <div class="photo-frame">
+              <div class="photo-placeholder">
+                <img src="images/image.jpg" alt="Aryan Jain">
+              </div>
             </div>
-            <span class="cl-arrow">→</span>
-          </a>
-          <a href="#" class="contact-link">
-            <span class="cl-icon">💼</span>
-            <div class="cl-info">
-              <div class="cl-platform">LinkedIn</div>
-              <div class="cl-handle">linkedin.com/in/aryanjain</div>
+          </div>
+          <div class="about-floating-badge fb-1 glass reveal reveal-delay-2">
+            <span class="badge-icon"></span>
+            <div>
+              <div style="font-size:11px;color:black;margin-bottom:2px">Specialization</div>
+              <div>LLMs & RAG Systems</div>
             </div>
-            <span class="cl-arrow">→</span>
-          </a>
-          <a href="#" class="contact-link">
-            <span class="cl-icon">🐙</span>
-            <div class="cl-info">
-              <div class="cl-platform">GitHub</div>
-              <div class="cl-handle">github.com/aryan-766</div>
+          </div>
+          <div class="about-floating-badge fb-2 glass reveal reveal-delay-3">
+            <span class="badge-icon"></span>
+            <div>
+              <div style="font-size:11px;color:black;margin-bottom:2px">Experience</div>
+              <div>2+ Years AI/ML</div>
             </div>
-            <span class="cl-arrow">→</span>
-          </a>
-          
+          </div>
+        </div>
+
+        <div class="about-content reveal reveal-delay-2">
+          <p class="about-intro">
+            I'm <strong>Aryan Jain</strong>, an AI Engineer with an <strong>entrepreneurial mindset</strong>, driven to
+            build products that solve real-world problems. With complete knowledge of <strong>ML, DL, Gen AI, RAG,
+              LangChain, LangGraph, AI agents, tools, and automations</strong>, I focus on turning complex intelligence
+            into scalable, impactful solutions.
+          </p>
+          <p class="about-intro" style="margin-bottom:40px">
+            Currently, I am building <strong>Synox AI</strong> and <strong>Raftra</strong>, while working as an
+            <strong>AI Trainee at Ambrane</strong>. I care deeply about crafting premium digital experiences and pushing
+            the boundaries of AI integration.
+          </p>
+
+          <div class="timeline">
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-date">2024-2028</div>
+              <div class="tl-title">B.Tech Computer Science & AI</div>
+              <div class="tl-org">Akhilesh Das Gupta Institute of Technology and Management</div>
+              <div class="tl-desc">CGPA: 8.0/10. Active in research, including a partially accepted paper at IEEE on
+                mitigating jailbreaking and prompt injection.</div>
             </div>
-            <span class="cl-arrow">→</span>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-date">2023-2024</div>
+              <div class="tl-title">Class 12th</div>
+              <div class="tl-org">High School Education</div>
+              <div class="tl-desc">Scored 84% with a strong foundation in science and mathematics.</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-date">2021-2022</div>
+              <div class="tl-title">Class 10th</div>
+              <div class="tl-org">Secondary Education</div>
+              <div class="tl-desc">Scored 92% demonstrating consistent academic excellence.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-wrap">
+      <div class="reveal">
+        <div class="section-label">Technical Skills</div>
+        <h2 class="section-title">Full-Stack <span
+            style="background:linear-gradient(135deg,var(--accent),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Intelligence</span>
+        </h2>
+        <p class="section-sub">From neural architecture research to pixel-perfect UI — I operate across the entire
+          intelligence stack.</p>
+      </div>
+
+      <div class="skills-tabs reveal">
+        <button class="tab-btn active" data-tab="aiml">AI / ML</button>
+        <button class="tab-btn" data-tab="programming">Programming</button>
+        <button class="tab-btn" data-tab="backend">Backend & APIs</button>
+        <button class="tab-btn" data-tab="cloud">Data & Cloud</button>
+        <button class="tab-btn" data-tab="frontend">Frontend</button>
+      </div>
+
+      <div class="skill-panel active" id="panel-aiml"
+        style="display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px">
+        <div class="skill-card" style="--w:95%"><span class="skill-icon">🧠</span>
+          <div class="skill-name">Machine Learning</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--w:90%"><span class="skill-icon">🔬</span>
+          <div class="skill-name">Deep Learning</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--w:95%"><span class="skill-icon">✨</span>
+          <div class="skill-name">Gen AI & Claude</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--w:92%"><span class="skill-icon">🤖</span>
+          <div class="skill-name">CrewAI & Agents</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--w:88%"><span class="skill-icon">👁️</span>
+          <div class="skill-name">RAG Systems</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--w:85%"><span class="skill-icon">⛓️</span>
+          <div class="skill-name">LangChain & LangGraph</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--w:90%"><span class="skill-icon">⚙️</span>
+          <div class="skill-name">Zapier, n8n, Automations</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-panel" id="panel-programming"
+        style="display:none;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px">
+        <div class="skill-card" style="--w:97%"><span class="skill-icon">🐍</span>
+          <div class="skill-name">Python</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--w:80%"><span class="skill-icon">☕</span>
+          <div class="skill-name">C</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--w:72%"><span class="skill-icon">⚙️</span>
+          <div class="skill-name">C++</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--w:85%"><span class="skill-icon">🗄️</span>
+          <div class="skill-name">SQL</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--w:88%"><span class="skill-icon">🌐</span>
+          <div class="skill-name">JavaScript</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--w:86%"><span class="skill-icon">📘</span>
+          <div class="skill-name">OOPS</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--w:86%"><span class="skill-icon">📘</span>
+          <div class="skill-name">TypeScript</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-panel" id="panel-backend"
+        style="display:none;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px">
+        <div class="skill-card" style="--w:95%"><span class="skill-icon">🚀</span>
+          <div class="skill-name">FastAPI</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--w:90%"><span class="skill-icon">🔌</span>
+          <div class="skill-name">REST APIs</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--w:85%"><span class="skill-icon">🫙</span>
+          <div class="skill-name">Django & Flask</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--w:88%"><span class="skill-icon">🔗</span>
+          <div class="skill-name">API Integrations</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--w:90%"><span class="skill-icon">⚡</span>
+          <div class="skill-name">Data Fetching</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--w:82%"><span class="skill-icon">🌐</span>
+          <div class="skill-name">Node.js</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-panel" id="panel-cloud"
+        style="display:none;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px">
+        <div class="skill-card" style="--w:85%"><span class="skill-icon">🐳</span>
+          <div class="skill-name">Docker</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--w:78%"><span class="skill-icon">☸️</span>
+          <div class="skill-name">Kubernetes</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--w:83%"><span class="skill-icon">☁️</span>
+          <div class="skill-name">AWS</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--w:88%"><span class="skill-icon">🔍</span>
+          <div class="skill-name">Vector DBs</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--w:80%"><span class="skill-icon">🐘</span>
+          <div class="skill-name">PostgreSQL</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--w:75%"><span class="skill-icon">🍃</span>
+          <div class="skill-name">MongoDB</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-panel" id="panel-frontend"
+        style="display:none;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px">
+        <div class="skill-card" style="--w:89%"><span class="skill-icon">⚛️</span>
+          <div class="skill-name">React</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--w:85%"><span class="skill-icon">🎨</span>
+          <div class="skill-name">Tailwind CSS</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--w:82%"><span class="skill-icon">🎭</span>
+          <div class="skill-name">Framer Motion</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--w:78%"><span class="skill-icon">✨</span>
+          <div class="skill-name">GSAP</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--w:75%"><span class="skill-icon">🌐</span>
+          <div class="skill-name">Three.js</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+        <div class="skill-card" style="--w:87%"><span class="skill-icon">🖌️</span>
+          <div class="skill-name">UI/UX Design</div>
+          <div class="skill-level">
+            <div class="skill-level-fill"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-wrap">
+      <div class="reveal">
+        <div class="section-label">Featured Projects</div>
+        <h2 class="section-title">Systems That <span
+            style="background:linear-gradient(135deg,var(--cyan),var(--green));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Think</span>
+        </h2>
+        <p class="section-sub">Production-grade AI systems built with research-level rigor and engineering excellence.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-preview">
+            <div class="project-preview-bg" style="background:linear-gradient(135deg,#1a0533,#0d1b3e,#002233)"></div>
+            <div class="project-emoji">🚀</div>
+            <div class="project-tags-preview">
+              <span class="tag">AI Agents</span>
+              <span class="tag">Gen AI</span>
+              <span class="tag">LLMs</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-title">Synox AI</div>
+            <div class="project-desc">Building an AI agents workplace site designed to empower employees with powerful
+              AI tools and seamless reference integration.</div>
+            <div class="project-metrics">
+              <span class="metric">Workplace AI</span>
+              <span class="metric">Agentic Workflows</span>
+            </div>
+            <div class="project-links">
+              <a href="https://synoxai.vercel.app" target="_blank" class="link-btn primary-link">Live Demo ↗</a>
+              <a href="https://github.com/aryan-766" class="link-btn">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-preview">
+            <div class="project-preview-bg" style="background:linear-gradient(135deg,#0a2a1a,#1a3a0a,#2a1a00)"></div>
+            <div class="project-emoji">📈</div>
+            <div class="project-tags-preview">
+              <span class="tag">Automations</span>
+              <span class="tag">Marketing</span>
+              <span class="tag">TypeScript</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-title">Raftra</div>
+            <div class="project-desc">A comprehensive marketing suite for agencies and SMEs. Features built-in
+              automations, streamlined workflows, and one-click ad launches across multiple platforms.</div>
+            <div class="project-metrics">
+              <span class="metric">Marketing Suite</span>
+              <span class="metric">1-Click Ads</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/aryan-766/raftra" class="link-btn">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-preview">
+            <div class="project-preview-bg" style="background:linear-gradient(135deg,#1a0020,#2a0a1a,#1a0a2a)"></div>
+            <div class="project-emoji">🛡️</div>
+            <div class="project-tags-preview">
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Python</span>
+              <span class="tag">Classification</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-title">Fraud Invoice Detector</div>
+            <div class="project-desc">Machine learning solution designed to detect fraudulent activities within invoice
+              processing pipelines, ensuring financial security.</div>
+            <div class="project-metrics">
+              <span class="metric">Fraud Detection</span>
+              <span class="metric">Python</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/aryan-766/fraud_invoice_detector" class="link-btn">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-preview">
+            <div class="project-preview-bg" style="background:linear-gradient(135deg,#001a2a,#0a1a3a,#001533)"></div>
+            <div class="project-emoji">🏥</div>
+            <div class="project-tags-preview">
+              <span class="tag">Deep Learning</span>
+              <span class="tag">Python</span>
+              <span class="tag">Healthcare</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-title">Patient Churn Classifier</div>
+            <div class="project-desc">Advanced predictive model for healthcare to identify patient churn risks and
+              classify disease indicators from medical data.</div>
+            <div class="project-metrics">
+              <span class="metric">Health Tech</span>
+              <span class="metric">Predictive AI</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/aryan-766/patient-churn-disease-classifier" class="link-btn">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-preview">
+            <div class="project-preview-bg" style="background:linear-gradient(135deg,#0a1a00,#1a2a00,#0a0a1a)"></div>
+            <div class="project-emoji">💹</div>
+            <div class="project-tags-preview">
+              <span class="tag">Time Series</span>
+              <span class="tag">Finance</span>
+              <span class="tag">Python</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-title">Stock Return Forecaster</div>
+            <div class="project-desc">Quantitative finance tool that utilizes historical data and machine learning to
+              forecast future stock returns and market trends.</div>
+            <div class="project-metrics">
+              <span class="metric">FinTech</span>
+              <span class="metric">Forecasting</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/aryan-766/stock_return_forecaster" class="link-btn">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-preview">
+            <div class="project-preview-bg" style="background:linear-gradient(135deg,#1a0a00,#2a1000,#1a0a1a)"></div>
+            <div class="project-emoji">🏠</div>
+            <div class="project-tags-preview">
+              <span class="tag">Regression</span>
+              <span class="tag">Python</span>
+              <span class="tag">Real Estate</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-title">House Price Prediction</div>
+            <div class="project-desc">Regression-based machine learning model analyzing various property attributes to
+              accurately predict housing prices.</div>
+            <div class="project-metrics">
+              <span class="metric">Real Estate</span>
+              <span class="metric">Data Science</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/aryan-766/house_price_prediction" class="link-btn">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-wrap">
+      <div class="reveal">
+        <div class="section-label">Experience</div>
+        <h2 class="section-title">Professional <span
+            style="background:linear-gradient(135deg,var(--amber),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Journey</span>
+        </h2>
+        <p class="section-sub">Building at the frontier of AI across research labs, startups, and enterprise
+          environments.</p>
+      </div>
+
+      <div class="exp-timeline">
+        <div class="exp-item reveal">
+          <div class="exp-dot"></div>
+          <div class="exp-card">
+            <div class="exp-period">JUNE 2026 - CURRENT</div>
+            <div class="exp-role">AI Trainee</div>
+            <div class="exp-company">AMBRANE</div>
+            <ul class="exp-bullets">
+              <li>Working on cutting-edge AI integrations and automation pipelines using LangChain and Gen AI tools.
+              </li>
+              <li>Gaining hands-on expertise in developing production-grade AI systems, ML, and DL models.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item reveal reveal-delay-1">
+          <div class="exp-dot"></div>
+          <div class="exp-card">
+            <div class="exp-period">FEB 2026 — CURRENT</div>
+            <div class="exp-role">Founder</div>
+            <div class="exp-company">SYNOX AI</div>
+            <ul class="exp-bullets">
+              <li>Building an AI agents workplace site providing employees with powerful AI tools and reference
+                generation integrations.</li>
+              <li>Implementing multi-agent architectures and LangGraph for complex task orchestration.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item reveal reveal-delay-1">
+          <div class="exp-dot"></div>
+          <div class="exp-card">
+            <div class="exp-period">JAN 2026 — CURRENT</div>
+            <div class="exp-role">Founder</div>
+            <div class="exp-company">RAFTRA</div>
+            <ul class="exp-bullets">
+              <li>Developing a comprehensive marketing suite to assist marketing agencies and SMEs.</li>
+              <li>Engineering built-in automations to reduce workflows and enabling 1-click ad launches across multiple
+                platforms.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item reveal reveal-delay-2">
+          <div class="exp-dot"></div>
+          <div class="exp-card">
+            <div class="exp-period">Research & Academia</div>
+            <div class="exp-role">Co-Author</div>
+            <div class="exp-company">IEEE Publication</div>
+            <ul class="exp-bullets">
+              <li>📝 Partially accepted research paper at IEEE.</li>
+              <li>Collaborated with 5 other co-authors on "Mitigating Jailbreaking and Prompt Injection" in Large
+                Language Models.</li>
+              <li>Contributing actively to securing AI agents and LLM-powered applications.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CODE SHOWCASE -->
+  <section id="code">
+    <div class="section-wrap">
+      <div class="reveal">
+        <div class="section-label">Engineer Mindset</div>
+        <h2 class="section-title">Clean Code,<br><span
+            style="background:linear-gradient(135deg,var(--accent),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Clear
+            Thinking</span></h2>
+        <p class="section-sub">Production-grade ML code that's as readable as it is powerful.</p>
+      </div>
+
+      <div class="code-editor reveal">
+        <div class="code-editor-header">
+          <span class="dot dot-r"></span>
+          <span class="dot dot-y"></span>
+          <span class="dot dot-g"></span>
+          <div class="code-tabs">
+            <span class="code-tab active">rag_pipeline.py</span>
+            <span class="code-tab">fine_tune.py</span>
+            <span class="code-tab">inference.py</span>
+          </div>
+        </div>
+        <div class="code-body">
+          <div class="code-line"><span class="line-num">1</span><span class="code-content"><span class="cm"># Enterprise
+                RAG Pipeline with hybrid search + reranking</span></span></div>
+          <div class="code-line"><span class="line-num">2</span><span class="code-content"><span class="kw">from</span>
+              <span class="fn">langchain</span> <span class="kw">import</span> <span class="cls">RAGChain</span>, <span
+                class="cls">HybridRetriever</span></span></div>
+          <div class="code-line"><span class="line-num">3</span><span class="code-content"><span class="kw">from</span>
+              <span class="fn">transformers</span> <span class="kw">import</span> <span
+                class="cls">AutoModelForCausalLM</span>, <span class="cls">AutoTokenizer</span></span></div>
+          <div class="code-line"><span class="line-num">4</span><span class="code-content"><span
+                class="kw">import</span> <span class="fn">pinecone</span></span></div>
+          <div class="code-line"><span class="line-num">5</span><span class="code-content"></span></div>
+          <div class="code-line"><span class="line-num">6</span><span class="code-content"><span class="kw">class</span>
+              <span class="cls">EnterpriseRAG</span>:</span></div>
+          <div class="code-line"><span class="line-num">7</span><span class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;<span
+                class="kw">def</span> <span class="fn">__init__</span>(<span class="op">self</span>, model_id: <span
+                class="cls">str</span>, index_name: <span class="cls">str</span>):</span></div>
+          <div class="code-line"><span class="line-num">8</span><span
+              class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">self</span>.model =
+              <span class="cls">AutoModelForCausalLM</span>.from_pretrained(</span></div>
+          <div class="code-line"><span class="line-num">9</span><span
+              class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;model_id,
+              load_in_4bit=<span class="kw">True</span>, device_map=<span class="str">"auto"</span></span></div>
+          <div class="code-line"><span class="line-num">10</span><span
+              class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</span></div>
+          <div class="code-line"><span class="line-num">11</span><span
+              class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                class="op">self</span>.retriever = <span class="cls">HybridRetriever</span>(</span></div>
+          <div class="code-line"><span class="line-num">12</span><span
+              class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dense_index=pinecone.Index(index_name),</span>
+          </div>
+          <div class="code-line"><span class="line-num">13</span><span
+              class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alpha=<span
+                class="num">0.7</span>, <span class="cm"># weight for dense retrieval</span></span></div>
+          <div class="code-line"><span class="line-num">14</span><span
+              class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</span></div>
+          <div class="code-line"><span class="line-num">15</span><span class="code-content"></span></div>
+          <div class="code-line"><span class="line-num">16</span><span
+              class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">async def</span> <span
+                class="fn">query</span>(<span class="op">self</span>, question: <span class="cls">str</span>, k: <span
+                class="cls">int</span> = <span class="num">5</span>) -> <span class="cls">dict</span>:</span></div>
+          <div class="code-line"><span class="line-num">17</span><span
+              class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;docs = <span class="kw">await</span>
+              <span class="op">self</span>.retriever.aretrieve(question, k=k)</span></div>
+          <div class="code-line"><span class="line-num">18</span><span
+              class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reranked = <span
+                class="op">self</span>.rerank(docs, question)</span></div>
+          <div class="code-line"><span class="line-num">19</span><span
+              class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;context = <span
+                class="op">self</span>.format_context(reranked[:<span class="num">3</span>])</span></div>
+          <div class="code-line"><span class="line-num">20</span><span
+              class="code-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">return await</span>
+              <span class="op">self</span>.generate(question, context)</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- GITHUB STATS -->
+  <section id="github">
+    <div class="section-wrap">
+      <div class="reveal">
+        <div class="section-label">GitHub Activity</div>
+        <h2 class="section-title">Always <span
+            style="background:linear-gradient(135deg,var(--green),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Shipping</span>
+        </h2>
+        <p class="section-sub">Consistent contributions across open source projects, research, and production systems.
+        </p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <div class="stat-card-num" data-count="1000">0</div>
+          <div class="stat-card-label">GitHub Commits</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-1">
+          <div class="stat-card-num" data-count="12">0</div>
+          <div class="stat-card-label">Repositories</div>
+        </div>
+
+      </div>
+
+      <div class="reveal" style="margin-top:32px">
+        <div style="font-size:12px;color:rgb(229, 65, 65);font-family:var(--font-mono);margin-bottom:12px">Contribution
+          activity — past 12 months</div>
+        <div class="heatmap" id="heatmap"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-wrap">
+      <div class="reveal">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title">Let's Build<br><span
+            style="background:linear-gradient(135deg,var(--accent),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Something
+            Remarkable</span></h2>
+      </div>
+
+      <div class="contact-grid">
+        <form action="https://formsubmit.co/aryan070606@gmail.com" method="POST" class="contact-form-wrap glass reveal">
+          <input type="hidden" name="_subject" value="New message from your portfolio!">
+          <div class="form-group">
+            <label class="form-label">Your Name</label>
+            <input type="text" name="name" class="form-input" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input type="email" name="email" class="form-input" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">What are you building?</label>
+            <textarea name="message" class="form-textarea"
+              placeholder="Tell me about your project, idea, or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%;justify-content:center;padding:14px">Send Message
+            →</button>
+        </form>
+
+        <div class="contact-info reveal reveal-delay-1">
+          <p class="contact-intro">Whether you're building the next generation of AI products, need an expert to join
+            your team, or want to collaborate on research — I'm always open to interesting conversations.</p>
+          <div class="contact-links">
+            <a href="mailto:aryan070606@gmail.com" class="contact-link">
+              <span class="cl-icon">📧</span>
+              <div class="cl-info">
+                <div class="cl-platform">Email</div>
+                <div class="cl-handle">aryan070606@gmail.com</div>
+              </div>
+              <span class="cl-arrow">→</span>
+            </a>
+            <a href="#" class="contact-link">
+              <span class="cl-icon">💼</span>
+              <div class="cl-info">
+                <div class="cl-platform">LinkedIn</div>
+                <div class="cl-handle">linkedin.com/in/aryanjain</div>
+              </div>
+              <span class="cl-arrow">→</span>
+            </a>
+            <a href="#" class="contact-link">
+              <span class="cl-icon">🐙</span>
+              <div class="cl-info">
+                <div class="cl-platform">GitHub</div>
+                <div class="cl-handle">github.com/aryan-766</div>
+              </div>
+              <span class="cl-arrow">→</span>
+            </a>
+
+          </div>
+          <span class="cl-arrow">→</span>
           </a>
         </div>
       </div>
     </div>
-  </div>
-</section>
- 
-<!-- FOOTER -->
-<footer>
-  <div>
-    <div class="nav-logo" style="margin-bottom:4px">Aryan jain</div>
-    <div class="footer-text">AI/ML Engineer · Delhi, India</div>
-  </div>
-  
-  <div class="footer-mono">v2.4.0 · Available for hire</div>
-</footer>
- 
-<script src="script.js"></script>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <div class="nav-logo" style="margin-bottom:4px">Aryan jain</div>
+      <div class="footer-text">AI/ML Engineer · Delhi, India</div>
+    </div>
+
+    <div class="footer-mono">v2.4.0 · Available for hire</div>
+  </footer>
+
+  <script src="script.js"></script>
 
 </body>
+
 </html>
