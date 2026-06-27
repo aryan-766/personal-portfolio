@@ -1,6 +1,4 @@
-
-{  
-  "output directory": "dist",
-  "buildCommand": "npm run build",
+{
+  "buildCommand": null,
   "devCommand": "npm run dev"
 }
