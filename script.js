@@ -225,9 +225,4 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 });
- 
-// Resume button
-document.getElementById('resumeBtn').addEventListener('click', e => {
-  e.preventDefault();
-  alert('Resume download would start here. Replace with actual PDF link.');
-});
+ 
