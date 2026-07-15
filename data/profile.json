@@ -1,0 +1,159 @@
+{
+  "name": {
+    "first": "Aryan",
+    "last": "Jain",
+    "full": "Aryan Jain"
+  },
+  "email": "aryan070606@gmail.com",
+  "tagline": "Building Intelligent Systems & Startups.",
+  "description": "I build AI agents, design robust machine learning systems, and create premium digital experiences that push the boundary of what's possible.",
+  "roles": {
+    "short": "AI Engineer & Founder",
+    "detailed": "AI Engineer · ML/DL · AI Agents & RAG"
+  },
+  "location": {
+    "based": "India",
+    "availability": "Worldwide"
+  },
+  "available": true,
+  "bio": "I'm Aryan Jain, an AI Engineer with an entrepreneurial mindset, driven to build products that solve real-world problems. With complete knowledge of ML, DL, Gen AI, RAG, LangChain, LangGraph, AI agents, tools, and automations, I focus on turning complex intelligence into scalable, impactful solutions. Currently, I am building Synox AI and Raftra, while working as an AI Trainee at Ambrane. I care deeply about crafting premium digital experiences and pushing the boundaries of AI integration.",
+  "stats": [
+    { "value": "2+",  "label": "Years Experience" },
+    { "value": "15", "label": "Projects Built" },
+    { "value": "95",   "label": "Models Trained" }
+  ],
+  "skills": [
+    "AI Engineer",
+    "Machine Learning",
+    "Deep Learning",
+    "Gen AI & Claude",
+    "CrewAI & Agents",
+    "RAG Systems",
+    "LangChain",
+    "LangGraph",
+    "Python",
+    "FastAPI",
+    "Vector DBs",
+    "Automations"
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "role": "AI Trainee",
+      "company": "Ambrane",
+      "companyShort": "AMBRANE",
+      "type": "Full-time",
+      "location": "India",
+      "period": "Jun 2026",
+      "periodEnd": "Current",
+      "bullets": [
+        "Working on cutting-edge AI integrations and automation pipelines using LangChain and Gen AI tools.",
+        "Gaining hands-on expertise in developing production-grade AI systems, ML, and DL models."
+      ],
+      "desc": "Working on cutting-edge AI integrations and automation pipelines using LangChain and Gen AI tools.",
+      "tech": [
+        "LangChain",
+        "Gen AI",
+        "Machine Learning",
+        "Deep Learning"
+      ]
+    },
+    {
+      "id": 2,
+      "role": "Founder",
+      "company": "Synox AI",
+      "companyShort": "SYNOX AI",
+      "type": "Startup",
+      "location": "India",
+      "period": "Feb 2026",
+      "periodEnd": "Current",
+      "bullets": [
+        "Building an AI agents workplace site providing employees with powerful AI tools and reference generation integrations.",
+        "Implementing multi-agent architectures and LangGraph for complex task orchestration."
+      ],
+      "desc": "Building an AI agents workplace site providing employees with powerful AI tools and reference generation integrations.",
+      "tech": ["AI Agents", "LangGraph", "Gen AI"]
+    },
+    {
+      "id": 3,
+      "role": "Founder",
+      "company": "Raftra",
+      "companyShort": "RAFTRA",
+      "type": "Startup",
+      "location": "India",
+      "period": "Jan 2026",
+      "periodEnd": "Current",
+      "bullets": [
+        "Developing a comprehensive marketing suite to assist marketing agencies and SMEs.",
+        "Engineering built-in automations to reduce workflows and enabling 1-click ad launches across multiple platforms."
+      ],
+      "desc": "Developing a comprehensive marketing suite to assist marketing agencies and SMEs.",
+      "tech": ["Automations", "Marketing Tech", "TypeScript"]
+    },
+    {
+      "id": 4,
+      "role": "Co-Author",
+      "company": "IEEE Publication",
+      "companyShort": "IEEE",
+      "type": "Research",
+      "location": "India",
+      "period": "Academia",
+      "periodEnd": "",
+      "bullets": [
+        "Partially accepted research paper at IEEE.",
+        "Collaborated with 5 other co-authors on Mitigating Jailbreaking and Prompt Injection in Large Language Models.",
+        "Contributing actively to securing AI agents and LLM-powered applications."
+      ],
+      "desc": "Research on Mitigating Jailbreaking and Prompt Injection in Large Language Models.",
+      "tech": ["Research", "LLM Security", "Prompt Injection"]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Synox AI",
+      "subtitle": "Workplace AI & Agentic Workflows",
+      "type": "AI Agents",
+      "link": "https://synoxai.vercel.app",
+      "image": "/images/cool_ai_avatar.png",
+      "tech": ["AI Agents", "Gen AI", "LLMs"],
+      "desc": "Building an AI agents workplace site designed to empower employees with powerful AI tools and seamless reference integration."
+    },
+    {
+      "id": 2,
+      "title": "Raftra",
+      "subtitle": "Marketing Suite & 1-Click Ads",
+      "type": "Automations",
+      "link": "https://github.com/aryan-766/raftra",
+      "image": "/images/cool_ai_avatar.png",
+      "tech": ["Automations", "Marketing", "TypeScript"],
+      "desc": "A comprehensive marketing suite for agencies and SMEs. Features built-in automations, streamlined workflows, and one-click ad launches across multiple platforms."
+    },
+    {
+      "id": 3,
+      "title": "Fraud Invoice Detector",
+      "subtitle": "Machine Learning for Financial Security",
+      "type": "Machine Learning",
+      "link": "https://github.com/aryan-766/fraud_invoice_detector",
+      "image": "/images/cool_ai_avatar.png",
+      "tech": ["Machine Learning", "Python", "Classification"],
+      "desc": "Machine learning solution designed to detect fraudulent activities within invoice processing pipelines, ensuring financial security."
+    },
+    {
+      "id": 4,
+      "title": "Patient Churn Classifier",
+      "subtitle": "Predictive AI for Health Tech",
+      "type": "Deep Learning",
+      "link": "https://github.com/aryan-766/patient-churn-disease-classifier",
+      "image": "/images/cool_ai_avatar.png",
+      "tech": ["Deep Learning", "Python", "Healthcare"],
+      "desc": "Advanced predictive model for healthcare to identify patient churn risks and classify disease indicators from medical data."
+    }
+  ],
+  "publications": [],
+  "socials": [
+    { "label": "GitHub",    "href": "https://github.com/aryan-766" },
+    { "label": "LinkedIn",  "href": "https://www.linkedin.com" },
+    { "label": "Twitter",    "href": "https://twitter.com" }
+  ]
+}
